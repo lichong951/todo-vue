@@ -1,5 +1,3 @@
-const ArticleController = require('../controller/article');
-
 const Service = require('egg').Service;
 
 class ArticleService extends Service {

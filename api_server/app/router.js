@@ -9,4 +9,12 @@ module.exports = app => {
   router.post('/article/create',controller.article.create);
   router.get('/article/lists',controller.article.lists);
   router.get('/article/detail/:id',controller.article.detail);
+
+  router.get('/todo',controller.todo.index);
+  router.post('/todo/create',controller.todo.create);
+  router.post('/todo/update',controller.todo.update);
+  router.post('/todo/update_status',controller.todo.updateStatus);
+
+
+
 };
