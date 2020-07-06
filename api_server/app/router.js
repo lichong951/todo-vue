@@ -11,6 +11,8 @@ module.exports = app => {
   router.get('/article/detail/:id',controller.article.detail);
 
   router.get('/todo',controller.todo.index);
+  router.get('/todo/:page',controller.todo.list)
+  router.get('/todo/id/:id',controller.todo.get)
   router.post('/todo/create',controller.todo.create);
   router.post('/todo/update',controller.todo.update);
   router.post('/todo/update_status',controller.todo.updateStatus);
